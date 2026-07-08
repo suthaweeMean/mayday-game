@@ -38,7 +38,7 @@ const questionsGame2 = [
 
     revealImage:"/wild/4_answer.png",
 
-    answers:["Fox","fox","หมาจิ้งจอก","สุนัขจิ้งจอก"],
+    answers:["Penguins","Penguin","เพนกวิน","เพนกวิ้น"],
 
     time:20,
 },

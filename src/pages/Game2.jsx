@@ -72,7 +72,7 @@ function Game2() {
   useEffect(() => {
 
     const handleQuestion = (data) => {
-
+console.log("NEW QUESTION =", data.question);
       setCurrentQuestion(
         data.question
       );
