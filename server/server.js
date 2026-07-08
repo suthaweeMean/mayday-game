@@ -363,6 +363,13 @@ else if (room.game.selectedGame === "game2") {
 
   totalQuestions = questionsGame2.length;
 
+  console.log(
+    "Game2 total =",
+    totalQuestions,
+    "Current =",
+    room.game.currentQuestion
+  );
+
 }
 
 else if (room.game.selectedGame === "game3") {

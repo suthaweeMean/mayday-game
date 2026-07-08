@@ -288,6 +288,12 @@ console.log("GAME FINISHED EVENT", isHost, scores);
     );
 
   };
+
+  const question = questions[currentQuestion];
+
+if (!question) {
+  return null;
+}
     // -----------------------------
   // UI
   // -----------------------------
@@ -437,11 +443,11 @@ console.log("GAME FINISHED EVENT", isHost, scores);
           {!revealed ? (
 
             <img
-              src={
-                questions[currentQuestion]
-                  .questionImage
-              }
-              alt=""
+  src={
+    question
+      .questionImage
+  }
+  alt=""
               style={{
                 width: "100%",
                 borderRadius: "15px",
@@ -452,10 +458,10 @@ console.log("GAME FINISHED EVENT", isHost, scores);
           ) : (
 
             <img
-              src={
-                questions[currentQuestion]
-                  .revealImage
-              }
+  src={
+    question
+      .revealImage
+  }
               alt=""
               style={{
                 width: "70%",
@@ -474,7 +480,7 @@ console.log("GAME FINISHED EVENT", isHost, scores);
                 textAlign: "center",
               }}
             >
-              ✅ {questions[currentQuestion].answers[0]}
+              ✅ {question.answers[0]}
             </h2>
 
           )}
