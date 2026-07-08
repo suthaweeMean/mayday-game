@@ -1,5 +1,7 @@
 import { io } from "socket.io-client";
 
-const socket = io("http://192.168.1.47:5000");
+const socket = io("https://mayday-game.onrender.com", {
+  transports: ["websocket", "polling"],
+});
 
 export default socket;
