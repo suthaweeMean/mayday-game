@@ -53,17 +53,7 @@ const questionsGame2 = [
 
     time:20,
 },
- {
-    id:6,
-
-    questionImage:"/wild/6_question.png",
-
-    revealImage:"/wild/6_answer.png",
-
-    answers:["Duck","duck","เป็ด"],
-
-    time:20,
-},
+ 
 ];
 
 export default questionsGame2;
