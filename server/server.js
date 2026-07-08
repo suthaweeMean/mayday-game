@@ -10,13 +10,26 @@ import questionsGame4 from "../shared/questionsGame4.js";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://mayday-game.vercel.app",
+      "http://localhost:5173",
+    ],
+    credentials: true,
+  })
+);
 
 const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: [
+      "https://mayday-game.vercel.app",
+      "http://localhost:5173",
+    ],
+    methods: ["GET", "POST"],
+    credentials: true,
   },
 });
 
